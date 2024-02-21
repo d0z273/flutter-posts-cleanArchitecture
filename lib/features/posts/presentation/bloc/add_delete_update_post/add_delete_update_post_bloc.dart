@@ -1,4 +1,4 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:clean_architecture_posts_app/core/error/failures.dart';
 import 'package:clean_architecture_posts_app/core/strings/failures.dart';
 import 'package:clean_architecture_posts_app/core/strings/messages.dart';
@@ -56,9 +56,9 @@ class AddDeleteUpdatePostBloc
 
   String _mapFailureToMessage(Failure failure) {
     switch (failure.runtimeType) {
-      case ServerFailure _:
+      case ServerFailure:
         return SERVER_FAILURE_MESSAGE;
-      case OfflineFailure _:
+      case OfflineFailure:
         return OFFLINE_FAILURE_MESSAGE;
 
       default:

@@ -12,6 +12,7 @@ abstract class PostRemoteDataSource {
   Future<Unit> addPost(PostModel postModel);
 }
 
+// ignore: constant_identifier_names
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 class PostRemoteDataSourceImpl implements PostRemoteDataSource {
